@@ -650,13 +650,13 @@ img {
         font-size: 0.8em;
     }
 
-    nav {
-        top: -100px;
-        transition: 0.5s;
+    header {
+        border-radius: 20px;
+        border: 5px solid #a6fdd3;
     }
 
-    nav:hover {
-        top: 0;
+    nav {
+        display: none;
     }
 
     #imgAPropos {
