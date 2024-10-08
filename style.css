@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-anchor: auto;
+}
+
+body {
+    background-color: #fef9eb;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    height: fit-content;
+    border: 5px solid #a6fdd3;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    padding: 50px;
+}
+
+nav {
+    z-index: 2;
+    background-color: #4acc8d;
+    color: #fef9eb;
+    height: fit-content;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 5px solid #a6fdd3;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+section {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 8px solid #4acc8d;
+}
+
+footer {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    height: 125px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #fef9eb;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul h3 {
+    margin-top: 50px;
+}
+
+img {
+    border: 5px solid #4acc8d;
+    border-radius: 20px;
+}
+
+.logo {
+    border: 0;
+}
+
+.aImg:hover {
+    border-color: #a6fdd3;
+}
+
+.divH2P {
+    width: 60%;
+    height: 50px;
+    background-color: #4acc8d;
+    color: #fef9eb;
+    padding: 50px 30px 50px 30px;
+    border: 5px solid #a6fdd3;
+    border-radius: 20px;
+    transition: 1s;
+    animation: borderAnim;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderAnim {
+    from {
+        border-color: #a6fdd3;
+      }
+    
+      to {
+        border-color: darkgreen;
+      }
+}
+
+.divH2P:hover {
+    height: 300px;
+    animation: none;
+}
+
+.divH2P:hover p {
+    top: 0;
+    opacity: 100%;
+}
+
+.divH2P h2 {
+    text-align: center;
+}
+
+.divH2P p {   
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#ulNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#ulNav li {
+    background-color: #4acc8d;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#ulNav li:hover {
+    background-color: #a6fdd3;
+    color: darkgreen;
+}
+
+#imgAPropos {
+    width: 100%;
+}
+
+#divAPropos1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#divAPropos2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#divProfil {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    width: 300px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+#divExp {
+    width: 700px;
+}
+
+#divExp h2 {
+    margin-top: 50px;
+}
+
+#secLoisirs h1 {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#divLoisirs {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#divPremJeu {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#divPremJeuTitre {
+    width: 500px;
+    height: 500px;
+}
+
+#divPremJeuTitre h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4acc8d;
+    color: #fef9eb;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    height: 150px;
+}
+
+#logoKirby {
+    width: 500px;
+}
+
+#divPremJeuImg1 {
+    width: 70%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#divPremJeuImg1 p:hover + #imgPremJeu1, #imgPremJeu1:hover {
+    animation: none;
+    top: 0;
+}
+
+#imgPremJeu1:hover + #imgK1, #divPremJeuImg1 p:hover + #imgPremJeu1 + #imgK1 {
+    top: -50px;
+}
+
+#divPremJeuImg1 p {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    font-size: 1.2em;
+    text-align: justify;
+    height: 200px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#imgPremJeu1 {
+    z-index: 1;
+    border-color: #a6fdd3;
+    width: 98.5%;
+    position: relative;
+    top: -300px;
+    transition: 1s;
+    animation: borderAnim;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#imgK1 {
+    border: 0;
+    width: 500px;
+    position: relative;
+    top: -350px;
+    transition: 1s;
+}
+
+#divPremJeuImg2 {
+    display: flex;
+    height: 800px;
+    border-right: 8px solid #4acc8d;
+}
+
+#divPremJeuImg2 div {
+    width: 450px;
+    height: 700px;
+    background-color: #4acc8d;
+    color: #fef9eb;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#divPremJeuImg2 p {
+    padding-bottom: 50px;
+}
+
+#imgPremJeu2 {
+    z-index: 1;
+    width: 540px;
+    height: 790px;
+    border-color: #a6fdd3;
+    position: relative;
+    left: -550px;
+    transition: 1s;
+    animation: borderAnim;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#imgK2 {
+    border: 0;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 530px;
+    bottom: 500px;
+    transition: 1s;
+}
+
+#divPremJeuImg2 div:hover + #imgPremJeu2, #imgPremJeu2:hover {
+    animation: none;
+    left: 0;
+}
+
+#divJeuPref {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divJeuPrefTitre {
+    width: 500px;
+    height: 500px;
+}
+
+#divJeuPrefTitre h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4acc8d;
+    color: #fef9eb;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    height: 150px;
+}
+
+#logoMH {
+    width: 500px;
+}
+
+#divJeuPrefImg {
+    width: 600px;
+}
+
+#divJeuPrefImg img {
+    width: 590px;
+}
+
+#secJeuPref p {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    font-size: 1.2em;
+    text-align: justify;
+    height: 150px;
+    margin-top: 25px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#secMangas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h1Mangas {
+    background-color: #4acc8d;
+    color: #fef9eb;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divMangas {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    color: #fef9eb;
+    margin-top: 50px;
+}
+
+.divMangas img {
+    height: 490px;
+    width: 490px;
+    position: relative;
+    left: 250px;
+    transition: 1s;
+}
+
+.divMangas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 425px;
+    width: 400px;
+    position: relative;
+    right: 250px;
+    transition: 1s;
+    padding: 50px;
+    padding-top: 25px;
+    background-color: #4acc8d;
+    border-radius: 20px;
+}
+
+.divMangas:hover img {
+    left: 0;
+}
+
+.divMangas:hover div {
+    right: 0;
+}
+
+.divMangas:hover h2, .divMangas:hover p {
+    opacity: 100%;
+}
+
+.divMangas h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.divMangas p {
+    text-align: justify;
+    opacity: 0;
+    transition: 1s;
+}
+
+#rank3 {
+    background-color: #fb9e58;
+    width: 100px;
+    border-radius: 20px;
+}
+
+#rank2 {
+    background-color: #cbcbcb;
+    width: 100px;
+    border-radius: 20px;
+}
+
+#rank1 {
+    background-color: #fbe058;
+    width: 100px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    #divLoisirs {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #secPremJeu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divPremJeu {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    #imgPremJeu1 {
+        top: 0;
+        animation: none;
+    }
+
+    #divPremJeuImg1 {
+        height: fit-content;
+    }
+
+    #divPremJeuImg1 p {
+        height: fit-content;
+    }
+
+    #divPremJeuImg1 p:hover + #imgPremJeu1, #imgPremJeu1:hover {
+        animation: none;
+        top: 0;
+    }
+
+    #imgK1 {
+        display: none;
+    }
+
+    #divPremJeuImg2 {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        border: 0;
+    }
+
+    #divPremJeuImg2 div {
+        width: 70%;
+        height: fit-content;
+    }
+
+    #imgPremJeu2 {
+        animation: none;
+        left: 0;
+        width: 70%;
+        height: auto;
+    }
+
+    #secJeuPref {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divJeuPref {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #divJeuPrefTitre {
+        width: 70%;
+        height: auto;
+    }
+
+    #divJeuPrefTitre img {
+        width: 100%;
+        height: auto;
+    }
+
+    #divJeuPrefP {
+        height: fit-content;
+        width: 90%;
+    }
+
+    #divJeuPrefP p {
+        height: fit-content;
+    }
+
+    #divJeuPrefImg {
+        width: 70%;
+    }
+
+    #divJeuPrefImg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    body {
+        font-size: 0.9em;
+    }
+
+    #divAPropos1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divAPropos2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #divExp {
+        width: 90%;
+    }
+
+    #secMangas h1 {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .divMangas {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 500px;
+    }
+
+    .divMangas img {
+        left: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .divMangas div {
+        right: 0;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .divMangas h2 {
+        opacity: 100%;
+    }
+
+    .divMangas p {
+        opacity: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    nav {
+        top: -100px;
+        transition: 0.5s;
+    }
+
+    nav:hover {
+        top: 0;
+    }
+
+    #imgAPropos {
+        width: 400px;
+    }
+
+    #divProfil {
+        width: 70%;
+    }
+
+    #divPremJeuTitre {
+        width: 70%;
+    }
+
+    #logoKirby {
+        width: 100%;
+        height: auto;
+    }
+
+    .divMangas img {
+        width: 390px;
+        height: auto;
+    }
+
+    .divMangas div {
+        width: 300px;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
